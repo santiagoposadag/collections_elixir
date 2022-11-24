@@ -12,7 +12,7 @@ defmodule Collections do
 
   """
   Tomar una tupla que contenga un string en su primera posicion,
-  agregarle mas valores, convertirla en un string y manipularla para que
+  agregarle mas valores, convertirla en un List y manipularla para que
   queden todas las posiciones en mayuscula,
   al final imprimir el resultado
   """
@@ -41,7 +41,7 @@ defmodule Collections do
   end
 
   """
-  Construir a mano dos listas que contengan elementos iguales,
+  Construir a mano dos listas que contengan elementos en comun,
   restarle a la primera lista los valores en comun de la segunda lista
   y por ultimo imprimir la cabeza y la cola de la lista
   """
@@ -59,15 +59,17 @@ defmodule Collections do
   end
 
   """
-  Constrir un mapa, a partir de el contruir una lista e imprimir el resultado
+  Constrir un mapa, a partir de el contruir una lista,
+  manipular los valores para que esten en mayuscula
+  e imprimir el resultado
   """
   def working_with_map2 do
     :world
   end
 
   """
-  Utilizar la estructura de datos, construir dos mapsets
-  manualmente, y quitarle los elementos del segundo mas set al primero que tengan en comun
+  Construir dos mapsets
+  manualmente, y quitarle los elementos del segundo map set al primero que tengan en comun
   por medio de las funciones del map set
   (para que esto sea posible el map set uno debe tener elementos en comun con el map set dos)
   """
@@ -84,7 +86,7 @@ defmodule Collections do
   end
 
   """
-  Cosntruir un rango de 0 a 10 saltando de 2 en 2,
+  Construir un rango de 0 a 10 saltando de 2 en 2,
   convertir a lista, sumarle 3 a cada vlor e
   imprimir el resultado
   """

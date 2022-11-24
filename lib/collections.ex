@@ -14,13 +14,22 @@ defmodule Collections do
 
   """
   Tomar una tupla que contenga un string en su primera posicion,
-  agregarle mas valores, convertirla en un string y manipularla para que
+  agregarle mas valores, convertirla en un list y manipularla para que
   queden todas las posiciones en mayuscula,
   al final imprimir el resultado
   """
 
   def working_with_tuples2 do
-    :world
+    tupla = {"hola"}
+    palabra = IO.gets("inserte aqui la palabra 1 a agregar ")
+    tupla = Tuple.append(tupla, palabra)
+    palabra = IO.gets("inserte aqui la palabra 2 a agregar ")
+    tupla = Tuple.append(tupla, palabra)
+    palabra = IO.gets("inserte aqui la palabra 3 a agregar ")
+    tupla = Tuple.append(tupla, palabra)
+    lista = Tuple.to_list(tupla)
+    listUpper = Enum.map(lista, fn x -> String.upcase(x) end)
+    listUpper
   end
 
   """
@@ -29,7 +38,12 @@ defmodule Collections do
   """
 
   def working_with_keywordlist1 do
-    :world
+    cicle = [0, 1, 2, 3 ,4]
+    listWithKeyAtoms = [:one, :two, :three, :four, :five, 1]
+    wordsInList = Enum.map(cicle, fn _x -> IO.gets("ingrese la palabra ") end)
+    keywordNew = Keyword
+    .new(cicle, fn x -> {Enum.at(listWithKeyAtoms, x), Enum.at(wordsInList, x)} end)
+    keywordNew
   end
 
   """

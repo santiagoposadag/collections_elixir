@@ -7,7 +7,9 @@ defmodule Collections do
   """
 
   def working_with_tuples1 do
-    :world
+    palabra = IO.gets("inserte aqui la palabra a multiplicar ")
+    tupla = Tuple.duplicate(palabra, 3)
+    tupla
   end
 
   """

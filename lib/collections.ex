@@ -1,5 +1,4 @@
 defmodule Collections do
-alias Inspect.MapSet
 
   """
   Recibir un input del usuario en fomrato string,
